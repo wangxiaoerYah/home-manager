@@ -41,7 +41,7 @@ let
             Label = networkDef.labels // {
               "nix.home-manager.managed" = true;
             };
-            PodmanArgs = networkDef.extraPodmanArgs;
+            #PodmanArgs = networkDef.extraPodmanArgs;
             Subnet = networkDef.subnet;
           };
           Service = {
